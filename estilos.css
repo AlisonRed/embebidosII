@@ -1,0 +1,67 @@
+body {
+    background-color: white;
+}
+.login { 
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 50%;
+    background-color: #292B2C;
+    color: #292B2C;
+    background-color: #c1c1c1;
+    padding-top: 5%;
+    padding-bottom: 1%; 
+}
+
+.objetos {
+    display: inline-block;
+    margin-left: 10%;
+    width: 30%;
+    border-radius: 3px;
+    border-style: unset;
+    border-color: white;
+    border-width: 1px;
+    padding: 0 4px;
+    height: 2em;
+    outline: none;
+}
+
+label {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+}
+
+.boton {
+    vertical-align: middle;
+    text-transform: none;
+    width: 55px;
+    cursor: pointer;
+}
+
+.materias {
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 70%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+.p {
+    color: #1D1E1F;
+}
+
+select {
+    border-color: #D7D7D7 !important;
+    border-style: outset !important;
+}
+
+.black {
+    background-color: #1D1E1F;
+}
+
+a {
+    cursor: pointer;
+}

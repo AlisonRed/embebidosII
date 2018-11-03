@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="images/logoUANL.png" type="image/x-icon">
+  <title>UANL</title>
+  <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+  <link href="estilos.css" rel="stylesheet" type="text/css" media="all">
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body id="top">
+    <div class="wrapper row0 black">
+      <div id="topbar" class="hoc clear"> 
+        <div class="fl_left">
+          <ul class="nospace">
+            <li><a href="#"><i class="fa fa-lg fa-home"></i></a></li>
+            <li><a href="#">Inicio</a></li>
+            <li id="horarios" style="display:none"><a>Horarios</a></li>
+            <li><a onclick="cerrarSesion();">Cerrar Sesión</a></li>
+          </ul>
+        </div>
+        <div class="fl_right">
+          <ul class="nospace">
+            <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
+            <li><i class="fa fa-envelope-o"></i> info@uanl.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <div class="wrapper row1">
+    <header id="header" class="hoc clear">
+      <div id="logo" class="fl_left">
+        <h1><a href="index.html"><img src="images/fcfm.png" style="width:140px;height:79;"></a></h1>
+      </div>
+    </header>
+    </div>
+  </div>
+<div id="inicio">
+  <div id="login" class="wrapper row3 login">
+    <p>
+      <label>Usuario:</label>
+      <input id="usuario" class="objetos" type="text" tabindex="1">
+    </p>
+    <p>
+      <label>Contraseña:</label>
+      <input id="contra" class="objetos" type="password" tabindex="1">
+      <a class="objetos btn boton" onclick="comprobarCredenciales();" tabindex="1">Entrar</a>
+    </p>
+  </div>
+  <div id="materias" class="materias scrollable" hidden>
+    <h1>Materias</h1>
+    <p class="p">
+      <label>Semestre:</label>
+      <select id="semestre" class="semestre objetos" onchange="cargarMaterias(this);">
+        <option value="0">seleccionar...</option>
+      </select>
+    </p>
+    <table id="tablaMaterias" class="p">
+      <tr>
+        <th>Materia</th>
+        <th>Créditos</th>
+        <th>Horario</th>
+        <th>Docente</th>
+      </tr>
+    </table>
+    
+  </div>
+</div>
+<div class="wrapper row4">
+  <footer id="footer" class="hoc clear" style="height:50px;"> 
+    <div class="one_quarter first">
+      <p>Mexico 01 800 70 611 00</p>
+      <p>U.S.A. 800 699 4115</p>
+    </div>
+  </footer>
+</div>
+<div class="wrapper row5">
+  <div id="copyright" class="hoc clear"> 
+    <p class="fl_left"> UNIVERSIDAD AUTÓNOMA DE NUEVO LEÓN | 2018</p>
+    <p class="fl_left">Pedro de Alba s/n, San Nicolás de Los Garza, Nuevo León</p>
+  </div>
+</div>
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
+
+
